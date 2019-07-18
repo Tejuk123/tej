@@ -4,27 +4,34 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace st
+namespace _11
 {
-    class P
+    public  class G
     {
-        public static string t;
-        static string te;
-        static P()
+          public virtual void c()
         {
-            t = "teju";
-            te = "te";
+            Console.WriteLine("tttt");
         }
+        
 
+
+    }
+    public class R : G
+    {
+        public override void c()
+        {
+            Console.WriteLine("teju");
+        }
     }
     class Program
     {
+        
         static void Main(string[] args)
         {
-            Console.WriteLine(P.t);
+            //G g;
+            G g = new R();
+            g.c();
             Console.ReadLine();
-
-            
         }
     }
 }
